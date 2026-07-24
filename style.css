@@ -1,0 +1,271 @@
+
+@import url("https://res.cloudinary.com/dfmw9ho24/raw/upload/v1784492399/TESLA_a39iwn.ttf");
+
+@font-face {
+    font-family: "tesla";
+    src: url("https://res.cloudinary.com/dfmw9ho24/raw/upload/v1784492399/TESLA_a39iwn.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    
+}
+
+.preta{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+section{
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+    padding: 1vw;
+    -webkit-mask-image: url(assets/tesla.svg);
+    mask-repeat: no-repeat;
+    mask-size:1000% ;
+    mask-position: center;
+
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 12;
+    padding:1.5vw;
+    display: flex;
+    justify-content: space-between;
+    
+    h1{
+        font-family: "tesla";
+        font-size: 2vw;
+        letter-spacing: .1em;
+        text-align: start;
+        
+    }
+    .logins{
+        width: 27%;
+        display: flex;
+        justify-content: center;
+        gap:4%;
+       margin-top: -1%;
+        
+
+        
+
+        img{
+            object-fit: contain;
+            height: 3vw;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                transform: translateY(-11px);
+            }
+
+        }
+
+        .bt2{
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.824);
+        border-radius: 40px;
+        padding: .3vw .7vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        transition: all .5s;
+        border: .1px solid white;
+        backdrop-filter: blur(8px);
+        transform: translateY(-10%);
+
+        img{
+            width: 1.4vw;
+        }
+           &:hover{
+            transform: translateY(-15px);
+           }
+
+        p{
+            font-family: sans-serif;
+            font-size: .9vw;
+            font-weight: 100;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            letter-spacing: .2em;
+        }
+            &:hover{
+                transform: translateY(-11px);
+            }
+        }
+
+        
+
+        
+            
+
+
+
+        
+
+
+    }
+}
+
+
+.container{
+width: 100%;
+height: 100%;
+clip-path: url(#formato); 
+display: flex;
+align-items: center;
+justify-content:space-around;
+flex-direction: row-reverse;
+
+video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    object-position: right;
+    opacity: 1;
+}
+}
+
+
+.conteudoEsquerda{
+    background-color: rgba(124, 124, 124, 0);
+    width: 30%;
+    margin-bottom: 39%;
+    z-index: 2;
+    padding: 2px;
+    overflow: hidden;
+    border-radius: 20px ;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: start;
+    backdrop-filter: blur(20px); 
+    position: relative;
+    pointer-events: none;
+
+    .conteudo{
+        
+        padding: 1vw;
+    }
+    h1{
+        margin-top: 15%;
+        font-family: "tesla";
+        color: #dedede;
+        font-size: 4vw;
+        font-weight: 200;
+        mix-blend-mode: color-dodge;
+
+    }
+
+    p{
+        font-family: sans-serif;
+        color: #dedede;
+        font-size: 1.2em;
+        font-weight: 100;
+        width: 80%;
+        letter-spacing: .3em;
+    }
+
+    .bt{
+        width: 50%;
+        margin-top: 5%;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 40px;
+        padding: .6vw .7vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        transition: all .5s;
+        border: .1px solid white;
+        backdrop-filter: blur(8px);
+           &:hover{
+            transform: translateY(-11px);
+           }
+
+        p{
+            font-family: sans-serif;
+            font-size: 1vw;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        
+            
+            img{
+                width: 2vw;
+                object-fit: cover;
+            }
+        
+
+
+    }
+
+    .luz{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 247px;
+        background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #b9efff 100%);
+        z-index: 1;
+        filter: blur(80px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+}
+
+.conteudoInferior{
+    width: 70%;
+    z-index: 2;
+    padding: 5vw;
+    margin-top: 36%;
+    
+    h1{
+        font-family: "tesla";
+        font-size: 2vw;
+        color: #dedede;
+        font-weight: 100;
+        letter-spacing: .3em;
+
+    }
+
+    h2{
+        font-family: "tesla";
+        font-size: 7vw;
+        letter-spacing: .1em;
+        background: linear-gradient(45deg, #f0eded, #0153f8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+       
+
+    }
+}
+
