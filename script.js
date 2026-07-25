@@ -32,10 +32,30 @@ window.addEventListener('mousemove',(event)=>{
   })
 
 
+
+  tl.to(".header",{
+    opacity:0,
+    duration: .3,
+  })
+  tl.to(".conteudoEsquerda",{
+    opacity:0,
+    duration: .5,
+  })
+  tl.to(".conteudoInferior",{
+    opacity:0,
+    duration: .5,
+  },"-=1")
+
+  tl.to(".container",{
+    height:"100%",
+    duration: 1
+  },"-=1")
+
+
  tl.to("section",{
-  maskSize: "30%",
+  maskSize: "20%",
   maskPosition:"center center",
-  duration:1.5,
+  duration:2,
   
 })
 
