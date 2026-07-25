@@ -25,7 +25,7 @@ window.addEventListener('mousemove',(event)=>{
     scrollTrigger:{
     trigger:"section",
     pin:true,
-    start:"13% 4%",
+    start:"10% 3%",
     scrub: 2,
    
   }
@@ -33,7 +33,7 @@ window.addEventListener('mousemove',(event)=>{
 
 
 
-  tl.to(".header",{
+  tl.to("header",{
     opacity:0,
     duration: .3,
   })
@@ -51,13 +51,21 @@ window.addEventListener('mousemove',(event)=>{
     duration: 1
   },"-=1")
 
-
- tl.to("section",{
+if(window.innerWidth < 600){
+  tl.to("section",{
+  maskSize: "60%",
+  maskPosition:"center center",
+  duration:2,
+})
+}else{
+  tl.to("section",{
   maskSize: "20%",
   maskPosition:"center center",
   duration:2,
   
 })
+}
+ 
 
 tl.to(".preta",{
   opacity: 1,
