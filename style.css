@@ -299,6 +299,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: visible;
     
     h1{
         font-family: "tesla";
@@ -315,7 +316,8 @@ header{
         justify-content: center;
         align-items: center;
         gap:14%;
-        margin-top: 2%;     
+        margin-top: 2%;
+        overflow: visible;     
 
 
         img{
@@ -385,6 +387,7 @@ align-items: center;
 justify-content:space-around;
 flex-direction: column;
 background-color: black;
+overflow: visible;
 
 video{
     object-fit: contain;

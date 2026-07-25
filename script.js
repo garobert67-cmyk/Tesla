@@ -24,7 +24,7 @@ window.addEventListener('mousemove',(event)=>{
   const tl = gsap.timeline({
     scrollTrigger:{
     trigger:"section",
-    pin:true,
+     pin:true, 
     start:"10% 3%",
     scrub: 2,
    
