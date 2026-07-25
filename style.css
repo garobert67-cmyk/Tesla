@@ -315,15 +315,14 @@ header{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap:14%;
+        gap:6%;
         margin-top: 2%;
         overflow: visible;     
 
 
         img{
             object-fit: cover;
-            height: 3vh;
-            width: 3vw;
+            width: 6vw;
             cursor: pointer;
             transition: all .5s;
             overflow: visible !important;
