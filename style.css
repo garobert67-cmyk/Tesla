@@ -324,7 +324,7 @@ header{
             width: 3vw;
             cursor: pointer;
             transition: all .5s;
-            overflow: visible;
+            overflow: visible !important;
             &:hover{
                 transform: translateY(-5px);
             }
